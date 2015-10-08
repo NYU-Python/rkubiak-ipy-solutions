@@ -1,6 +1,6 @@
 
 def stock(ticker):
-## function opens csv file for specific stock ticker
+## function opens csv file for specific stock  ticker
     if ticker == "AAPL":
         stock_table = open("aapl.csv")
     elif ticker == "FB":
