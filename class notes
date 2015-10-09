@@ -1,0 +1,15 @@
+
+
+selected lines = lines[1:10]
+
+for line in in fh:
+line count +=
+
+selected lines = lines[1:days]
+
+for line in fh.readlines() [1:days]:
+elerments = lines.split('.')
+floatprice = float('')
+prices.append(elements[4])
+prices_sum = sum(prices)
+Num_prices = len(prices)
