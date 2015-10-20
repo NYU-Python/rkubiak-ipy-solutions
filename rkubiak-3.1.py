@@ -5,7 +5,7 @@ import sys
 import argparse             
 
 
-#pull and check args with argparse
+#pull and check args with argparse    
 
 parser = argparse.ArgumentParser()
 parser.add_argument('directory', action='store', help='Insert path to directory')
