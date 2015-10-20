@@ -2,7 +2,7 @@ import time
 import datetime
 import os  
 import sys
-import argparse
+import argparse      
 
 
 #pull and check args with argparse
@@ -52,4 +52,6 @@ sorted_dictionary = sorted_data(dictionary, argvals.by, argvals.top_n, argvals.d
 #print sorted files
 
 for item in sorted_dictionary:
-	print item
+	print item   
+	
+	
