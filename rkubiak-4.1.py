@@ -4,13 +4,13 @@ Import os
 
 class Logger(object):
 	Def __init__(self, filename, priority='DEBUG',datetime=True, scriptname=True)
-  priorities = {
-  'DEBUG': 1,
-  'INFO': 2,
-  'WARNING': 3,
-  'ERROR': 4,
-  'CRITICAL': 5
-  }
+	  priorities = {
+	  'DEBUG': 1,
+	  'INFO': 2,
+	  'WARNING': 3,
+	  'ERROR': 4,
+	  'CRITICAL': 5
+	  }
 
 #open file, raise error if any
   try: 
