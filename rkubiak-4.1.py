@@ -17,7 +17,7 @@ class Logger(object):
   		Fh = open(filename, ‘a’)
   		Self.fh = fh
   except IOError, e:
-  		Raise IOError(“config file can’t be opened: {}”.format(e))
+  		Raise IOError(“config file cant be opened: {}”.format(e))
 
 #adjust priority based on integer assigned by dictionary, raise error if priority is missing
   try: 
@@ -70,4 +70,33 @@ class Logger(object):
   		self.prepend = time .ctime() + ‘ ‘
   	if self.scriptname:
   		self.prepend = self.prepend + os.path.basename(sys.argv(o))
-  	Return self.prepend
+  	return self.prepend
+#4.1a  	
+class Config():
+	def __init__(self, filename, overwrite_keys = True):
+		try:
+			fh = open(filenmae)
+		except IOError:
+			print 'IOError, file cant be opened'
+		self.overwrite = overwrite_keys
+		self.fh = fh
+		list_fh = self.fh.read().splitlines()
+		mylist = []
+		self.dict = {}
+		for i in list_fh:
+			i = i.split('=', 1)
+			mylist.append(i)
+		self.fh = open(filename, 'w')
+	def get(self, field):
+		try:
+			myfield = self.dict[field]
+		except KeyError:
+			print 'KeyError. There is no data for this entry'
+		return myfield
+	def set (self, mykey, myval):
+		if mykey in self.dict.keys() and not self.overwrite:
+			print 'ValueError. data alreasy in file'
+		else:
+			
+			
+		
